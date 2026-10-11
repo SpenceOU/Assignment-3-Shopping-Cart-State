@@ -35,7 +35,42 @@ body {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2px;
   background: #e5e5e5;
+}
+
+/* Cart section */
+.cart-section {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+.cart-list {
+  border-top: 1px solid #e5e5e5;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.cart-empty-sub {
+  font-size: 16px;
+  color: #666;
+  text-transform: none;
+  margin-top: 8px;
 }
